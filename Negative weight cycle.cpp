@@ -8,7 +8,7 @@ public:
 	int isNegativeWeightCycle(int n, vector<vector<int>>edges){
 	     vector<int>dist(n,1e8);
 	     
-	    // dist[0] =0;
+	    // dist[0] =0; this dont work for some reason here but does in code given below
     for(int i=0;i<n;i++){
         dist[i]=0; // bellman-ford for each vertex as source vertex
         
